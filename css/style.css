@@ -1,0 +1,48 @@
+body {
+   width: 320px;
+   height: 597px;
+}
+header {
+   height: 88px;
+   display: flex;
+   justify-content: center;
+   padding: 24px 16px 24px;
+}
+main {
+   height: 509px;
+   background: #F8F8F8;
+}
+button {
+   width: 40px;
+   height: 40px;
+   background: #FF3E79;
+   border-radius: 20px;
+   border: none;
+}
+h1 {
+   text-align: center;
+   font-family: 'TT Lakes';
+   font-size: 28px;
+   line-height: 40px;
+}
+.remote {
+   background: #FFFFFF;
+   border: 2px solid #B8FFEC;
+   border-radius: 6px;
+   width: 246px;
+   height: 40px;
+   color: #7E7E82;
+   font-size: 16px;
+   line-height: 24px;
+}
+.text {
+   width: 288px;
+   height: 90px;
+   margin: 24px 16px;
+   font-size: 14px;
+   line-height: 18px;
+}
+p {
+   font-size: 16px;
+   line-height: 24px;
+}
