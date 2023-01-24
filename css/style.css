@@ -1,15 +1,27 @@
+@media (width: 320px){
+   body{
+      display: flex;
+   }
+}
 body {
    width: 320px;
    height: 597px;
+   
 }
-header {
+.perants {
    height: 88px;
+   justify-content: space-around;
+   align-items: center;
    display: flex;
-   justify-content: space-between;
-   align-items: flex-end;
    padding: 24px 16px 24px;
 }
 .logo {
+   display: inline-block;
+}
+.shaddow {
+   Height: 1px;
+   Top: 87px;
+   background: #D9FFF5;
    display: inline;
 }
 .divider {
