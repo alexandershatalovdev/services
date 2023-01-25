@@ -86,3 +86,49 @@ p {
       display: flex;
    }
 }
+body {
+   width: 784px;
+   height: 604px;
+}
+.perants {
+   display: flex;
+   justify-content: space-around;
+   margin-right: 15px;
+}
+h1 {
+   font-size: 28px;
+   line-height: 40px;
+   color: #1B1C21;
+   width: 233px;
+   height: 40px;
+   left: 24px;
+   top: 112px;
+}
+.dop {
+   height: 24px;
+   left: 36.73%;
+   right: 39.67%;
+   top: 192px;
+   font-size: 16px;
+   line-height: 24px;
+}
+.service {
+   width: 769px;
+   overflow: none;
+}
+.price {
+   font-size: 16px;
+   line-height: 24px;
+   color: #7E7E82;
+}
+.special {
+   font-size: 16px;
+   line-height: 24px;
+   color: #7E7E82;
+   margin-left: 10px;
+}
+@media (width: 768px){
+   body{
+      display: flex;
+   }
+}
