@@ -1,4 +1,6 @@
-
+*{
+   box-sizing: border-box;
+}
 body {
    width: 320px;
    height: 597px;
@@ -131,4 +133,11 @@ h1 {
    body{
       display: flex;
    }
+}
+.grid{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax (312px, 1fr));
+   margin: 0;
+   gap: 48px;
+  
 }
