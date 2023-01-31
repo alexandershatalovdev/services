@@ -139,5 +139,21 @@ h1 {
    grid-template-columns: repeat(auto-fit, minmax (312px, 1fr));
    margin: 0;
    gap: 48px;
-  
+}
+h1{
+   display: flex;
+   justify-content: flex-start;
+}
+.burger, .logo, .divider, .phone, .message, .kent {
+   display: none;
+}
+.grid, .expand {
+   display: flex;
+   flex-direction: row;
+
+}
+@media (width: 1120px){
+   body{
+      display: flex;
+   }
 }
