@@ -150,7 +150,13 @@ h1{
 .grid, .expand {
    display: flex;
    flex-direction: row;
-
+}
+.path_text {
+   order: -1;
+  
+}
+.search {
+   order: 2;
 }
 @media (width: 1120px){
    body{
