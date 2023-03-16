@@ -8,60 +8,111 @@
    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-   <div class="perants">
-         <button class="burger">
-            <img src="./icons/icon.png" alt="burger">
-         </button>
-         <div class="logo">
-            <img src="./icons/logo.png" alt="logo">
-         </div>
-         <div class="divider">
-            <img src="./icons/divider.png" alt="divider">
-         </div>
-         <button class="phone">
-            <img src="./icons/phone.png" alt="phone">
-         </button>
-         <button class="message">
-            <img src="./icons/message.png" alt="message">
-         </button>
-         <button class="kent">
-            <img src="./icons/kent.png" alt="kent">
-         </button>
-         <button class="path">
-            <img src="./icons/path.png" alt="path">
-         </button>
-         <div class="path_text">
-            Оставить заявку
-         </div>
-         <button class="search">
-            <img src="./icons/search.png" alt="search">
-         </button>
-         <p>Статус ремонта</p>
-         <!-- <div class="shaddow">
-            <img src="./icons/shadow.png" alt="shaddow">
-         </div> -->
-   </div>
-   <main>
-      <h1>Услуги сервиса</h1>
-         <div class="service">
-            <button class="remote">Ремонтируеммые устройства</button>
-            <div class="dop">Дополнительные услуги</div>
-            <div class="price">цены на услуги</div>
-            <div class="special">Специальные цены</div>
-         </div>
-            <div class="grid">
-               <div class="text">Мы являемся авторизованным<br>
-           сервисным центром по ремонту техники<br>
-           Dell. Только у нас вы можете<br>
-           отремонтировать свой ноутбук Dell с<br>
-           официальной гарантией производителя.
-               </div>
-            <div class="expand">
-             <img src="./icons/expand.png" alt="expand">
-               <p>Читать дальше</p>
+   <div class="wrapper">
+      <ul class="button-group list-reset">
+            <li class="button-group__item">
+               <button class="button">
+                  <div class="button__img">
+                     <img src="./icons/burger.svg" alt="burger">
+                  </div>
+               </button>      
+            </li>
+            <div class="logo">
+               <img src="./icons/logo.svg" alt="logo">
             </div>
-             <div class="img_main"><img src="./img/img_1.jpg" alt=""></div>
-          </div>
+            <li class="button-group__item">
+               <button class="button">
+                  <div class="button__img">
+                      <img src="./icons/phone.svg" alt="phone">
+                  </div>
+               </button>
+            </li>
+            <li class="button-group__item">
+               <button class="button">
+                  <div class="button__img">
+                      <img src="./icons/message.svg" alt="message">
+                  </div>
+               </button>
+            </li>
+            <li class="button-group__item">
+               <button class="button">
+                  <div class="button__img">
+                      <img src="./icons/kent.svg" alt="kent">
+                  </div>
+               </button>
+            </li>
+      </ul>
+            <div class="divider">
+               <img src="./icons/divider.svg" alt="divider">
+            </div>
+            <div class="shaddow">
+               <img src="./icons/shadow.png" alt="shaddow">
+            </div>
+   <main>
+      <header>
+         <h1>Услуги сервиса</h1>
+         <ul class="button-group list-reset">
+            <li class="button-group__item">
+               <button class="button">
+                  <span class="button__text">Оставить заявку</span>
+                  <div class="button__img">
+                     <img src="./icons/path.svg" alt="path">
+                  </div>
+               </button>      
+            </li>
+            <li class="button-group__item">
+               <button class="button">
+               <span class="button__text">Статус ремонта</span> 
+                  <div class="button__img">
+                     <img src="./icons/search.svg" alt="search">
+                  </div>
+               </button>
+            </li>
+         </ul>
+       </header> 
+         <nav class="nav">
+             <ul class="nav__list"> 
+               <li class="nav__item">
+                  <a class="nav__link nav__link--active" href="#">Ремонтируеммые бренды</a>
+               </li>
+               <li class="nav__item">
+                  <a class="nav__link" href="#">Ремонтируеммые устройства</a>
+               </li>
+               <li class="nav__item">
+                  <a class="nav__link" href="#">Цены на услуги</a>
+               </li>
+               <li class="nav__item">
+                  <a class="nav__link" href="#">Адреса сервисных центров</a>
+               </li>
+               <li class="nav__item">
+                  <a class="nav__link--disable" href="#">Дополнительные услуги</a>
+               </li>
+               <li class="nav__item">
+                  <a class="nav__link" href="#">Специальные цены</a>
+               </li>
+             </ul>
+         </nav> 
+         <section class="about">
+            <div class="about__inner">
+               <div class="about__text">
+                  <p> Мы являемся авторизованным
+                  сервисным центром по ремонту техники 
+                  Dell. Только у нас вы можете
+                  отремонтировать свой ноутбук Dell с
+                  официальной гарантией производителя</p>
+                  <p> Мы успешно работаем с 1992 года и заслужили репутацию надежного
+                     партнера, что подтверждает большое количество постоянных клиентов 
+                     Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою 
+                     очередь, советуют нас родным и близким.</p>
+               </div>
+               <button class="expand about__expand">
+                  <img class="expand__img" src="./icons/expand.svg" alt="expand">
+                  <span class="expand__text" href="#">Читать дальше</span> 
+               </button>
+            </div>
+            <img class="about__img" src="./img/img_1.jpg" alt="">
+         </section>
    </main>
+   </div>
 </body>
 </html>

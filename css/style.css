@@ -2,9 +2,14 @@
    box-sizing: border-box;
 }
 body {
-   width: 320px;
-   height: 597px;
+  
    
+}
+.wrapper {
+   width: 1440px;
+   height: 100vh;
+   background: #F8F8F8;
+
 }
 .perants {
    height: 88px;
@@ -13,6 +18,15 @@ body {
    display: flex;
    padding: 24px 16px 24px;
    box-shadow: 25px 15px 10 10 #B8FFEC;
+}
+.burger {
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+   background-color:#FF3E79;
+   display: flex;
+   align-items:center; 
+   justify-content: center;
 }
 .logo {
    display: inline-block;
@@ -32,7 +46,7 @@ body {
 }
 main {
    height: 509px;
-   background: #F8F8F8;
+   /* background: #F8F8F8; */
 }
 .dop {
    width: 192px;
@@ -45,13 +59,6 @@ main {
    flex-wrap: nowrap;
    margin-top: 8px;
    overflow: scroll;
-}
-button {
-   width: 40px;
-   height: 40px;
-   background: #FF3E79;
-   border-radius: 20px;
-   border: none;
 }
 h1 {
    text-align: center;
@@ -89,8 +96,7 @@ p {
    }
 }
 body {
-   width: 784px;
-   height: 604px;
+   min-width: 320px;
 }
 .perants {
    display: flex;
@@ -101,10 +107,10 @@ h1 {
    font-size: 28px;
    line-height: 40px;
    color: #1B1C21;
-   width: 233px;
+   /* width: 233px;
    height: 40px;
    left: 24px;
-   top: 112px;
+   top: 112px; */
 }
 .dop {
    height: 24px;
@@ -129,10 +135,24 @@ h1 {
    color: #7E7E82;
    margin-left: 10px;
 }
-@media (width: 768px){
-   body{
-      display: flex;
+body {
+   display: block;
+}
+@media (min-width: 768px){ от 768 сработает 
+   .perants{
+      width: 768px;
+      height: 88px;
+      background-color: #FFFFFF;
    }
+   .burger{
+      padding: 24px;
+   }
+
+}
+@media (min-width: 1024px) {
+   body{
+      display: grid;
+   } 
 }
 .grid{
    display: grid;
@@ -158,7 +178,157 @@ h1{
 .search {
    order: 2;
 }
-@media (width: 1120px){
+/* .expand>img{
+   width: 24px;
+   height: 24px; */
+/* } */
+h1 {
+   align-content:flex-start;
+   order: -2;
+   /* margin-right: 95px; */
+}
+.perants {
+   display: none;
+}
+nav {
+   display: flex;
+   padding-top: 42px;
+}
+.path_text{
+  width: 125px;
+  height: 24px;
+  padding-top: 10px;
+}
+.search_text{
+   width: 125px;
+   height: 24px;
+   padding-top: 10px;
+}
+.list-reset {
+   margin-top: 0;
+   margin-bottom: 0;
+   padding-left: 0;
+   list-style: none;
+}
+.button-group {
+   display: flex;
+   gap: 16px;
+}
+.button {
+   display: flex;
+   align-items:center;
+   border: none;
+   background: transparent;
+   padding: 0;
+
+}
+.button__text{
+   margin-right: 12px;
+   font-size: 16px;
+   line-height: 24px;
+}
+.button__img{
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+   background-color:#FF3E79;
+   display: flex;
+   align-items:center; 
+   justify-content: center;
+}
+.line{
+   display: flex;
+   justify-content: flex-end;
+   background-color: #F8F8F8;
+}
+.expand {
+   display: flex;
+}
+.expand_img {
+   width: 8px;
+   height: 10px;
+   /* margin-right: 16px; */
+}
+.img_main {
+   width: 531px;
+   height: 307px;
+}
+.nav__list {
+   display: flex;
+   list-style: none;
+   padding: 0;
+   overflow: auto;
+   align-items:baseline;
+}
+.nav__item {
+   padding: 5px;
+   margin-right: 5px;
+}
+.nav__link {
+   text-decoration: none;
+   color:#7E7E82;
+   font-size: 16px;
+   line-height: 24px;
+   padding: 8px 16px; 
+   white-space: nowrap;
+}
+
+.nav__link--active {
+   border: 1px solid 
+   #B8FFEC;
+   padding: 7px 15px; 
+}
+header{
+   display: flex;
+   align-items:baseline;
+   justify-content: space-between;
+}
+.reviews {
+   padding-left: 32px;
+   color: #7E7E82;
+   font-size: 16px;
+}
+.expand_text {
+   padding-left: 8px;
+   text-decoration: none;
+}
+@media (min-width: 768px){ 
+   .about{
+      flex: 0 0 50%;
+      max-width: 50%;
+   }
+   .about__img {
+      flex: 0 0 50%;
+      max-width: 50%;
+   }
+}
+.about {
+   display: flex;
+}
+.about__inner{
+   padding: 5px 36px;
+   color: #1B1C21;
+   min-width: 490px;
+   min-height: 160px;
+}
+.nav__link--disable {
+   display: none;
+}
+.about__img {
+   min-width: 531px;
+   min-height: 383px;
+}
+.about__expand {
+   background: transparent;
+   border: none;
+}
+@media (min-width: 1120px){
+   body{
+      display: flex;
+   }
+}
+
+@media (max-width: 768px){ от 576px до 767px
    body{
       display: flex;
    }
