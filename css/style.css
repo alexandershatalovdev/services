@@ -1,12 +1,14 @@
 *{
    box-sizing: border-box;
+   padding: 0;
+   margin: 0;
 }
 body {
   
    
 }
 .wrapper {
-   width: 1440px;
+   width: 100%;
    height: 100vh;
    background: #F8F8F8;
 
@@ -139,15 +141,31 @@ body {
    display: block;
 }
 @media (min-width: 768px){ от 768 сработает 
-   .perants{
-      width: 768px;
-      height: 88px;
-      background-color: #FFFFFF;
+   .header{
+     background-color: #FFFFFF;
+   }
+   .header__inner{
+      min-width: 100%;
+      display: flex;
+      justify-content: space-between;
+      background-color:#FFFFFF;
+      align-items:center;
+      padding: 10px;
+   }
+   .button__img {
+      gap: 40px;
    }
    .burger{
       padding: 24px;
    }
-
+}
+.wrap, .test, .test1 {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.wrap{
+   width: 100%;
 }
 @media (min-width: 1024px) {
    body{
